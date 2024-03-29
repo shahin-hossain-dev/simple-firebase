@@ -5,4 +5,10 @@
  * 4. npm install firebase
  * 5. add config file to your project
  * 6. DANGER:do not share or publish your firebase config file to pushing public github
+ * 7. go to Docs > build > authentication > web > get started
+ * 8. export app from the firebase.config.js file export default app
+ * 9. Login.jsx: import {getAuth} from "firebase/auth"
+ * 10. create const auth = getAuth(app)
+ * 11. import google auth provider and create a new provider
+ * 12.
  */
