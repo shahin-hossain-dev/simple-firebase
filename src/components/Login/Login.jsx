@@ -5,10 +5,13 @@ import { GoogleAuthProvider } from "firebase/auth";
 const Login = () => {
   const auth = getAuth(app);
   const googleProvider = new GoogleAuthProvider();
+
+  //   google login auth
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
-        console.log(result.user);
+        const user = result.user;
+        console.log(user);
       })
       .catch((error) => console.log(error.message));
   };
